@@ -51,7 +51,7 @@ const updateTask = async (req, res) => {
 const deleteTask =  async (req, res) => {
     const { id } = req.params
     try {
-       const deleteTask =  await Task.findByIdAndDelete({_id:id});
+       const deleteTask =  await TaskModel.findByIdAndDelete({_id:id});
         res.json({ message: "Task deleted" });
     } catch (error) {
         res.status(500).json({ message: error.message });
