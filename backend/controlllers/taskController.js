@@ -1,5 +1,5 @@
 
-const { TaskModel } = require("../models/Task");
+const { TaskModel } = require("../models/task.model");
 
 
 
@@ -21,8 +21,11 @@ const addTask = async (req, res) => {
 
 // Get all tasks
 const allTask = async (req, res) => {
+    const userId = req.body.userId
+    console.log(userId);
+    
     try {
-        const tasks = await TaskModel.find();
+        const tasks = await TaskModel.find({userId : userId});
         res.status(200).json({ msg: "List of all task", tasks });
     } catch (error) {
         res.status(500).json({ message: error.message });

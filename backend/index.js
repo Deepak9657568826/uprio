@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
-const { taskRouter } = require("./routes/taskRoutes");
+const { taskRouter } = require("./routes/task.routes");
 const { connection } = require("./config/db");
+const { userRouter } = require("./routes/user.route");
 require('dotenv').config()
 const app = express();
 
@@ -17,8 +18,11 @@ app.get("/", (req, res) => {
 })
 
 app.use("/task", taskRouter)
+app.use("/auth" , userRouter)
+
 
 const PORT = process.env.PORT || 4500
+
 
 app.listen(PORT, async () => {
     try {
