@@ -1,0 +1,23 @@
+{
+  "msg": "List of all task",
+  "tasks": [
+    {
+      "_id": "67321a53772ff6b4932dca50",
+      "title": "Complete project documentation",
+      "description": "Finish writing the documentation for the To-Do app project.",
+      "dueDate": "2024-12-15T00:00:00.000Z",
+      "priority": "high",
+      "completed": "pending",
+      "__v": 0
+    },
+    {
+      "_id": "67321a7c772ff6b4932dca52",
+      "title": "Code review for team",
+      "description": "Review code for the new feature.",
+      "dueDate": "2024-12-12T00:00:00.000Z",
+      "priority": "medium",
+      "completed": "complete",
+      "__v": 0
+    }
+  ]
+}
