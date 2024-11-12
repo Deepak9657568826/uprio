@@ -1,0 +1,30 @@
+.signin-background {
+    background-image: url("https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?cs=srgb&dl=pexels-polina-kovaleva-5717479.jpg&fm=jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.signinform {
+    width: 30%;
+    min-width: 350px;
+}
+
+.logininform {
+    width: 25%;
+    min-width: 350px;
+
+}
+
+.login-background {
+    background-image: url("https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?cs=srgb&dl=pexels-polina-kovaleva-5717479.jpg&fm=jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: optimizeQuality;
+    display: grid;
+    place-items: center;
+}
