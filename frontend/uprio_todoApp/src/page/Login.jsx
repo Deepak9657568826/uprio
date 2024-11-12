@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; 
-import "../styles/SignIn.css";
 import { useToast } from '@chakra-ui/react'
 import axios from "axios"
 
